@@ -1,0 +1,62 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "ignore": [".next", "node_modules"],
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 90
+  },
+  "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "trailingComma": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "json": {
+    "parser": { "allowComments": true },
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 90
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": [".next", "node_modules"],
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUndeclaredVariables": "off",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error"
+      },
+      "a11y": {
+        "noAccessKey": "error",
+        "noAriaUnsupportedElements": "warn",
+        "noAutofocus": "off",
+        "noBlankTarget": {
+          "level": "error",
+          "options": {
+            "strictCase": false,
+            "enumMemberCase": "CONSTANT_CASE"
+          }
+        }
+      },
+      "nursery": {
+        "noUnusedImports": "error"
+      }
+    }
+  }
+}
