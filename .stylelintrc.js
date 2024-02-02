@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
-    'stylelint-config-standard-scss',
     'stylelint-config-recommended',
     'stylelint-config-recess-order',
     'stylelint-config-recommended-scss',
+    'stylelint-config-standard-scss',
   ],
-  plugins: [],
+  customSyntax: 'postcss-scss',
   rules: {
     // ::before, ::afterのコロンを2つにする
     'selector-pseudo-element-colon-notation': 'double',
