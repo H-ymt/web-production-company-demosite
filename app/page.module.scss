@@ -1,3 +1,35 @@
+@import "@/app/styles/_breakpoint.scss";
+
+.hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.heroContainer {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
 .heroTitle {
-  font-size: 32px;
+  font-size: 30px;
+
+  @include mq(md) {
+    font-size: 40px;
+  }
+}
+
+.heroText {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.heroButton {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.heroImages {
+  display: flex;
+  gap: 40px;
 }

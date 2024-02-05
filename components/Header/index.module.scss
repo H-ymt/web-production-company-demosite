@@ -1,5 +1,10 @@
 .header {
+  padding-inline: 20px;
+}
+
+.headerContainer {
   display: flex;
-  padding: 12px 20px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
 }

@@ -1,3 +1,26 @@
 .navList {
   display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style-type: none;
+}
+
+.navLink {
+  padding: 6px 12px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: inherit;
+}
+
+@media(hover: hover) {
+  .navLink:hover {
+    color: var(--blue-700);
+  }
+}
+
+.navLink.isActive {
+  border-radius: var(--rounded-sm);
+  background: var(--black-100);
 }

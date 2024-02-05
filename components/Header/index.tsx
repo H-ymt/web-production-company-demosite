@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 import Menu from '../Menu'
 
 export default function Header() {
